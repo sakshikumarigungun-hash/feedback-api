@@ -39,7 +39,7 @@ def add_feedback():
         "rating": rating,
         "date_created": datetime.utcnow()
     }
-
+#this line to insert daata
     result = feedback_collection.insert_one(feedback_data)
 
     return jsonify({
